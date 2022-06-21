@@ -22,9 +22,9 @@ if choise == 1:
   test_list = []#список(в си массив)
   for i in range(num_in_list):#number of lists
     for i in range(num_of_dig):#number of digits for list
-      start_list = [item for item in input().split()] #Returns a random number within a given range - (1,5)
+      start_list = [item for item in input().split()] #entered the new inputs in list
       print(start_list)
-      test_list.append(start_list)#adds  num to the end of the test_list
+      test_list.append(start_list)#adds num to the end of the test_list
     print("Our list ", test_list)
     print("Output ", sort_function(test_list))
     #del test_list[:] 
