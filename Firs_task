@@ -1,0 +1,49 @@
+#Розробити функцію, яка приймає на вхід необмежену кількість
+#списків довільної довжини та два іменовані параметри k та n.
+#Функція повертає всі списки, у яких елемент k зустрічається n разів.
+
+#Вхід : test_list = [(4, 5, 5, 4), (5, 4, 3)], K = 5, N = 2
+#Вихід : [(4, 5, 5, 4)]
+#Вхід : test_list = [(4, 5, 5, 4), (5, 4, 3)], K = 5, N = 3
+#Вихід : []
+
+#Функція з довільною кількістю аргументів
+#Наступна функція має один обов’язковий аргумент a, довільну кількість
+#неіменованих аргументів *b (кортеж), і довільну кількість іменованих аргументів **c (словник).
+
+#1. функция должна спрашивать кол-во списков
+#2. кол-во цифр в списке 
+#3. к
+#4. н
+
+from random import randint#randint - function of the random module;
+
+def function_of_argum(*test_list, k, n): #Function with any number of arguments
+  for item in test_list:
+    if item.count(k) >= n:
+      return [item] 
+    else:
+      return []#if the answer is None,output []
+
+print("If you want to choose random enter - 1, see working example - 2")
+choise = int(input())
+if choise == 1:
+  print("Enter the number of list")
+  num_in_list = int(input())
+  
+  print("Enter the number of digits for list")
+  num_of_dig = int(input())
+  
+  test_list = []#список(в си массив)
+  for i in range(num_in_list):#number of lists
+    for i in range(num_of_dig):#number of digits for list
+      num = randint(1,5)#Returns a random number within a given range - (1,5)
+      test_list.append(num)#adds  num to the end of the test_list
+    print("Our list ", test_list)
+    print("Output ", function_of_argum(test_list, k = 3, n = 2))
+    del test_list[:] 
+  
+elif choise == 2:
+  print("Output ", function_of_argum((4, 5, 5, 4), (5, 4, 3), k = 5, n = 2))
+  print("Output ", function_of_argum((4, 5, 5, 4), (5, 4, 3), k = 5, n = 3))
+  
