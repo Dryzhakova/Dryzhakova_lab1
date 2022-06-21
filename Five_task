@@ -1,15 +1,17 @@
 #def fifth_task(dict1: dict):
-    #return list(set([el for list1 in dict1.values() for el in list1]))
+    #
 
 
       
 #print(fifth_task(dict1={"gfg": [5, 6, 7, 8], "best": [6, 12, 10, 8], "is": [10, 11, 7, 5], "for": [1, 2, 5]}))
 import numpy as np
 
-def function(dict1: dict):
-  for list1 in dict1.values(): 
-    for el in list1:
-      return list(set(el))
+def function(text_dictionary: dict):
+  for list_dict in text_dictionary.values():
+    for item in list_dict:
+      return list(set(item)
+    
+ #return list(set([item for list_dict in text_dictionary.values() for item in list_dict]))
     
 #def fifth_task(dict1: dict):
     #return list(set([el for list1 in dict1.values() for el in list1]))
