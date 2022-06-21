@@ -6,7 +6,7 @@
 #Вихід: [[('a',1),('b',2)],[('a',2),('b',1)]].
 
 #zip – об’єднує послідовності в список кортежів;
-def sort_function(*test_list): 
+def function(*test_list): 
   output = list((zip(test_list[0], test_list[1]))) + list((zip(test_list[0][::-1], test_list[1])))#add first string with second
   return output[::-1]#reverse a string with a slice
 
@@ -26,8 +26,8 @@ if choise == 1:
       print(start_list)
       test_list.append(start_list)#adds num to the end of the test_list
     print("Our list ", test_list)
-    print("Output ", sort_function(test_list))
+    print("Output ", function(test_list))
     #del test_list[:] 
   
 elif choise == 2:
-  print("Output ", sort_function(["a", "b"], [1, 2]))
+  print("Output ", function(["a", "b"], [1, 2]))
