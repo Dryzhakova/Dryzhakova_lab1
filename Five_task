@@ -1,15 +1,11 @@
 #def fifth_task(dict1: dict):
-    #
-
-
-      
 #print(fifth_task(dict1={"gfg": [5, 6, 7, 8], "best": [6, 12, 10, 8], "is": [10, 11, 7, 5], "for": [1, 2, 5]}))
 import numpy as np
 
 def function(text_dictionary: dict):
-  for list_dict in text_dictionary.values():
-    for item in list_dict:
-      return list(set(item)
+  return list(set([item for list_dict in text_dictionary.values() for item in list_dict]))
+
+#return list(set([item for list1 in text_dictionary.values() for item in list_dict]))
     
  #return list(set([item for list_dict in text_dictionary.values() for item in list_dict]))
     
@@ -41,7 +37,7 @@ if choise == 1:
     start_list = [item for item in input().split()] #entered the new inputs in list
     print(start_list)
   words_list.append(start_list)#adds num to the end of the test_list
-  print("Our words list ", words_list)
+  #print("Our words list ", words_list)
   text_dictionary = dict(zip(np.array(numbers_list), np.array(words_list)))
   print(text_dictionary)
   print("Output ", function(test_list))
