@@ -1,16 +1,10 @@
-#def fifth_task(dict1: dict):
-#print(fifth_task(dict1={"gfg": [5, 6, 7, 8], "best": [6, 12, 10, 8], "is": [10, 11, 7, 5], "for": [1, 2, 5]}))
+#Вхід : {‘gfg’: [5, 6, 7, 8], ‘best’: [6, 12, 10, 8], ‘is’:[10, 11, 7, 5], ‘for’: [1, 2, 5]}
+#Вихід : [1, 2, 5, 6, 7, 8, 10, 11, 12].
+
 import numpy as np
 
 def function(text_dictionary: dict):
   return list(set([item for list_dict in text_dictionary.values() for item in list_dict]))
-
-#return list(set([item for list1 in text_dictionary.values() for item in list_dict]))
-    
- #return list(set([item for list_dict in text_dictionary.values() for item in list_dict]))
-    
-#def fifth_task(dict1: dict):
-    #return list(set([el for list1 in dict1.values() for el in list1]))
     
 print("If you want entered information enter - 1, see working example - 2")
 choise = int(input())
