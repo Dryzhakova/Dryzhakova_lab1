@@ -1,7 +1,10 @@
-#Вхід : {‘gfg’: [5, 6, 7, 8], ‘best’: [6, 12, 10, 8], ‘is’:[10, 11, 7, 5], ‘for’: [1, 2, 5]}
-#Вихід : [1, 2, 5, 6, 7, 8, 10, 11, 12].
+# Розробити функцію, яка приймає словник. Функція повертає
+# відсортований список унікальних значень заданого словника.
+# Вхід : {‘gfg’: [5, 6, 7, 8], ‘best’: [6, 12, 10, 8], ‘is’: [10, 11, 7, 5], ‘for’: [1, 2, 5]}
+# Вихід : [1, 2, 5, 6, 7, 8, 10, 11, 12].
 
 import numpy as np
+from nbpep8.nbpep8 import pep8
 
 def function(text_dictionary: dict):
   return list(set([item for list_dict in text_dictionary.values() for item in list_dict]))
@@ -42,7 +45,5 @@ elif choise == 2:
   text_dictionary = dict(zip(words, numbers))
   print(text_dictionary)
   print("Output ", function(text_dictionary))
-
-
-  
   #del test_list[:] 
+pep8(_ih)
