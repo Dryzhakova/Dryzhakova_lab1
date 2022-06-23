@@ -12,9 +12,6 @@
 # Відсортовано за стовпцем 0, [[‘c++’, 1983], [‘java’, 1995], [‘python’, 1989]]
 # Відсортовано за стовпцем 1, [[‘c++’, 1983], [‘python’, 1989], [‘java’, 1995]].
 
-#!pip install pycodestyle
-#!pip install --index-url https://test.pypi.org/simple/ nbpep8
-
 from nbpep8.nbpep8 import pep8
 
 def sort(*text_dictionary, k):
