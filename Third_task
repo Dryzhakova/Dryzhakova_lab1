@@ -1,1 +1,16 @@
+# Розробити функцію, яка приймає два списки з даними та список з
+# індексами. Функція виконує обмін елементів в списках із заданими
+# індексами. Функція повертає кортеж з двох змінених списків даних.
+# Вхід: [1,2,3,4,5,6],[‘a’,’b’,’c’,’e’,’j’],[1,2,3]
+# Вихід: [1,’b’,’c’,’e’,5,6],[‘a’,2,3,4,’j’].
 
+from nbpep8.nbpep8 import pep8
+def function(*text_dictionary, numbers):
+    for i in numbers:
+        temp = text_dictionary[0][i] # тимчасове значення
+        text_dictionary[0][i] = text_dictionary[1][i] # міняємо значення першого списку
+        text_dictionary[1][i] = temp # міняємо значення другого списку
+    return text_dictionary
+
+print(function([1, 2, 3, 4, 5, 6], ['a', 'b', 'c', 'e', 'j'], numbers = [1, 2, 3]))
+pep8(_ih)
