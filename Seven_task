@@ -1,11 +1,19 @@
-import numpy as np
+# Розробити функція, яка приймає словник, параметр k. Функція
+# повертає словник, у якому видалені всі пари “ключ-значення”, де
+# значення більші за k.
+# Вхід : test_dict = {‘Gfg’ : 3, ‘is’ : 7, ‘best’ : 10, ‘for’ : 6, ‘geeks’ : ‘CS’}, K = 7
+# Вихід : {‘Gfg’ : 3, ‘for’ : 6, ‘geeks’ : ‘CS’}
+# Вхід : test_dict = {‘Gfg’ : 3, ‘is’ : 7, ‘best’ : 10, ‘for’ : 6, ‘geeks’ : ‘CS’}, K = 1
+# Вихід : {‘geeks’ : ‘CS’}
 
-def function(text_dictionary: dict, k):
-  for item, ident in text_dictionary.items():
-    if type(ident) is not str and ident < k:
-      return {item: ident}
-  #return {item: ident for item, ident in text_dictionary.items() if (type(ident) is not str and ident < k)}?
-  
+import numpy as np
+from nbpep8.nbpep8 import pep8
+ 
+# вирокистовуємо генератор, розкладаємо словник на ключі та значення
+# та повертаємо потрібні нам
+
+def function(text_dictionary, k):
+    return {item: ident for item, ident in text_dictionary.items() if type(ident) == str or ident < k}
 
 print("If you want entered information enter - 1, see working example - 2")
 choise = int(input())
@@ -39,6 +47,10 @@ elif choise == 2:
   text_dictionary = {"Gfg": 3, "is": 7, "best": 10, "for": 6, "geeks": "CS"}
   k = 7
   print(function(text_dictionary,k))
+  k = 1
+  print(function(text_dictionary,k))
+pep8(_ih)
+  
 
 
  
