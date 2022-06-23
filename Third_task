@@ -5,12 +5,13 @@
 # Вихід: [1,’b’,’c’,’e’,5,6],[‘a’,2,3,4,’j’].
 
 from nbpep8.nbpep8 import pep8
+
 def function(*text_dictionary, numbers):
     for i in numbers:
-        temp = text_dictionary[0][i] # тимчасове значення
-        text_dictionary[0][i] = text_dictionary[1][i] # міняємо значення першого списку
-        text_dictionary[1][i] = temp # міняємо значення другого списку
-    return text_dictionary
+        temp = text_dictionary[0][i] # запоминаем элемент
+        text_dictionary[0][i] = text_dictionary[1][i] # меняем значение первого списка
+        text_dictionary[1][i] = temp # меняем значение второго списка
+    return text_dictionary #возвращаем значение
 
 print(function([1, 2, 3, 4, 5, 6], ['a', 'b', 'c', 'e', 'j'], numbers = [1, 2, 3]))
 pep8(_ih)
