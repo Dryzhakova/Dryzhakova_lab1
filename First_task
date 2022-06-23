@@ -16,6 +16,10 @@
 #3. к
 #4. н
 
+#!pip install pycodestyle
+#!pip install --index-url https://test.pypi.org/simple/ nbpep8
+
+from nbpep8.nbpep8 import pep8
 from random import randint#randint - function of the random module;
 
 def function_of_argum(*test_list, k, n): #Function with any number of arguments
@@ -45,3 +49,5 @@ if choise == 1:
 elif choise == 2:
   print("Output ", function_of_argum((4, 5, 5, 4), (5, 4, 3), k = 5, n = 2))
   print("Output ", function_of_argum((4, 5, 5, 4), (5, 4, 3), k = 5, n = 3))
+  
+pep8(_ih)
