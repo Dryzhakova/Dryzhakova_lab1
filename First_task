@@ -1,7 +1,7 @@
+#Task 1
 #Розробити функцію, яка приймає на вхід необмежену кількість
 #списків довільної довжини та два іменовані параметри k та n.
 #Функція повертає всі списки, у яких елемент k зустрічається n разів.
-
 #Вхід : test_list = [(4, 5, 5, 4), (5, 4, 3)], K = 5, N = 2
 #Вихід : [(4, 5, 5, 4)]
 #Вхід : test_list = [(4, 5, 5, 4), (5, 4, 3)], K = 5, N = 3
@@ -33,7 +33,6 @@ if choise == 1:
   
   print("Enter the number of digits for list")
   num_of_dig = int(input())
-  
   test_list = []#список(в си массив)
   for i in range(num_in_list):#number of lists
     for i in range(num_of_dig):#number of digits for list
