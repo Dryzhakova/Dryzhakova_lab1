@@ -1,3 +1,12 @@
+#Task 6
+# Розробити функцію, яка приймає список, словник, параметр k.
+# Функція повертає значення ключа k зі словника, якщо k є у списку.
+# Вхід : test_list = [“Gfg”, “is”, “Good”, “for”, “Geeks”], test_dict = {“Gfg” : 5, “Best” : 6}, K = “Gfg”
+# Вихід : 5
+# Вхід: test_list = [“Good”, “for”, “Geeks”], test_dict = {“Gfg” : 5, “Best” : 6}, K = “Gfg”
+# Вихід: None
+
+from nbpep8.nbpep8 import pep8
 import numpy as np
 
 def function(text_dictionary: list, text_dictionary1: dict, k):
@@ -55,5 +64,5 @@ elif choise == 2:
   text_dictionary1={"Gfg": 5, "Best": 6}
   k="Gfg"
   print(function(text_dictionary,text_dictionary1,k))
-
+pep8(_ih)
  
