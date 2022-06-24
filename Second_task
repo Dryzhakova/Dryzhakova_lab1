@@ -23,9 +23,12 @@ def sort(*text_dictionary, k):
     return sorted(*text_dictionary, key = lambda x: x[k]) # використувуємо лямбда-функцію
 
 text_dictionary = [1, 3, 3], [2, 1, 2], [3, 2, 1]
-print(sort(text_dictionary, k = 0))#сортировать по 1 столбцу
-print(sort(text_dictionary, k = 1))#по 2 столбцу
-print(sort(text_dictionary, k = 2))#по 3 столбцу
+first_sort = sort(text_dictionary, k=0)
+second_sort = sort(text_dictionary, k=1)
+third_sort = sort(text_dictionary, k=2)
+print(first_sort)
+print(second_sort)
+print(third_sort)
 
 text_dictionary = [['java', 1995], ['c++', 1983], ['python', 1989]]
 print(sort(text_dictionary, k = 0))
