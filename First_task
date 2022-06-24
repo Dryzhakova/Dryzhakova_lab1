@@ -47,7 +47,9 @@ if choise == 1:
     del test_list[:] 
   
 elif choise == 2:
-  print("Output ", function_of_argum((4, 5, 5, 4), (5, 4, 3), k = 5, n = 2))
-  print("Output ", function_of_argum((4, 5, 5, 4), (5, 4, 3), k = 5, n = 3))
+  first_example = function_of_argum((4, 5, 5, 4), (5, 4, 3), k = 5, n = 2) 
+  print("Output ", first_example)
+  second_example= function_of_argum((4, 5, 5, 4), (5, 4, 3), k = 5, n = 3)
+  print("Output ", second_example)
   
 pep8(_ih)
